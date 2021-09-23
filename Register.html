@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Register Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=ZCOOL+KuaiLe&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="logo">      
+          <h2>sounds<img class="icon" src="icons8-musical-notes-64.png"></h2>
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">WELCOME</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="login.html">Login</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        </div>
+      </nav>
+    </header>
+    <section>
+       <!-- Use GET not POST -->
+      <form method= "GET" action="action.php" class="form-containerR">
+            First Name: <input type="text" name="firstname" class="text-box">
+            Last Name: <input type="text" name="lasttname" class="text-box">
+            Email: <input type="text" name="email" required class="text-box">
+            Password: <input type="text" name="password" min="5" class="text-box">
+            Birthday: <input type="date" name="birthday" class="text-box">
+            Male: <input type="radio" name="gender" value="Male">
+           Female: <input type="radio" name="gender" value="Female">
+            Others: <input type="radio" name="gender" value="Others"> 
+            Cats: <input type="checkbox" name="cat">  
+            Dogs: <input type="checkbox" name="dog"> 
+            Cars:
+            <select name="cars" class="text-box">
+            <option value="volvo" name="volvo"> Volvo </option>
+            <option value= "kia" name="kia"> Kia </option>
+            </select>
+            <input type ="submit" value="Register" class="reset-button">
+            <input type="reset" class="reset-button">
+          
+      </form>
+    </section>
+    
+</body>
+<footer>My Shit</footer>
+</html>
